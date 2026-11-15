@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding-bottom: 150px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 18px;
+  background: #181818;
+}
+
+.header h1 {
+  font-size: 27px;
+  letter-spacing: -1px;
+}
+
+.header h1 span {
+  color: #1ed760;
+}
+
+.header button {
+  background: #292929;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+}
+
+.welcome {
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #183b2b, #121212);
+}
+
+.welcome h2 {
+  font-size: 25px;
+  margin-bottom: 9px;
+}
+
+.welcome p {
+  color: #c5c5c5;
+  font-size: 14px;
+}
+
+.section {
+  padding: 25px 18px 10px;
+}
+
+.section h2 {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.music-card {
+  background: #202020;
+  border-radius: 10px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.music-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 7px;
+  background: #333;
+}
+
+.music-card h3 {
+  font-size: 14px;
+  margin-top: 11px;
+}
+
+.music-card p {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.player {
+  position: fixed;
+  bottom: 65px;
+  left: 8px;
+  right: 8px;
+  background: #282828;
+  border-radius: 9px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.player strong {
+  font-size: 14px;
+}
+
+.player p {
+  color: #aaa;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.player button {
+  background: #1ed760;
+  border: none;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background: #080808;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+.bottom-nav button {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.bottom-nav span {
+  font-size: 11px;
+}
+
+#libraryMessage {
+  color: #aaa;
+  font-size: 14px;
+}
+
+@media (min-width: 600px) {
+  .music-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  main {
+    max-width: 850px;
+    margin: auto;
+  }
+}
